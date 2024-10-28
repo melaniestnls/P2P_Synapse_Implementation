@@ -2,11 +2,11 @@ import time
 from white_box import SynapseNode
 
 def main():
-    # Créer des nœuds avec de nouvelles IP
+    # Créer des noeuds avec de nouvelles IP
     node1 = SynapseNode("10.0.0.1")
     node2 = SynapseNode("10.0.0.2")
 
-    # Ajouter des réseaux pour le nœud 1
+    # Ajouter des réseaux pour le noeud 1
     node1.insert_net("LocalNetwork", node2.ip)
     node1.insert_net("ExternalNetwork", "10.0.0.3")
 

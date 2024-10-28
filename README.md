@@ -11,7 +11,7 @@ Ce README fournit des instructions sur l'utilisation de la classe `SynapseNode`,
 Lorsqu'un noeud souhaite effectuer une opération (comme GET ou PUT), il appelle la méthode `on_ope`. Cela crée un tag unique pour l'opération et envoie un message FIND à lui-même pour initier la recherche.
 
 ```python
-node.on_ope("GET", "key", None, "192.168.1.2")
+node.on_ope("GET", "key", None, "10.149.44.207")
 ```
 
 ### 2. Réception d'un message FIND
